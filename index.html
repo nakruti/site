@@ -6,19 +6,8 @@
     </head>
     <body>
         <script>
-            $.get(
-                "http://f0482823.xsph.ru/ssa.php",
-                {
-                    tok: "param1"
-                },
-                onAjaxSuccess
-                );
-                
-                function onAjaxSuccess(data)
-                {
-                // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
-                alert(data);
-                }
+            ajax.open('GET', 'http://f0482823.xsph.ru/ssa.php?tok=123');
+            ajax.send();
         </script>
     </body>
 </html>
